@@ -1,0 +1,82 @@
+:root {
+	--accent: #ffbdf2;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #ffffff;
+	opacity: 1;
+	background-image: linear-gradient(
+			#ffe6fa 3.8000000000000003px,
+			transparent 3.8000000000000003px
+		),
+		linear-gradient(
+			90deg,
+			#ffe6fa 3.8000000000000003px,
+			transparent 3.8000000000000003px
+		),
+		linear-gradient(
+			#ffe6fa 1.9000000000000001px,
+			transparent 1.9000000000000001px
+		),
+		linear-gradient(
+			90deg,
+			#ffe6fa 1.9000000000000001px,
+			#ffffff 1.9000000000000001px
+		);
+	background-size: 95px 95px, 95px 95px, 19px 19px, 19px 19px;
+	background-position: -3.8000000000000003px -3.8000000000000003px,
+		-3.8000000000000003px -3.8000000000000003px,
+		-1.9000000000000001px -1.9000000000000001px,
+		-1.9000000000000001px -1.9000000000000001px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+input[type="text"] {
+	padding: 0.5rem 1rem;
+	width: 15rem;
+	border: 6px solid var(--accent);
+	border-radius: 8px;
+	outline: none;
+	font-size: 1.2rem;
+}
+
+img {
+	border-radius: 8px;
+	border: 6px solid var(--accent);
+	max-height: 60%;
+	max-width: 80%;
+}
+
+button {
+	padding: 0.5rem 1rem;
+	border: 6px solid var(--accent);
+	border-radius: 8px;
+	background-color: white;
+	cursor: pointer;
+	outline: none;
+	transition: 0.3s;
+	font-size: 1.2rem;
+}
+
+#next-gif {
+	margin-top: 2rem;
+}
+
+button:active {
+	border: 2px solid var(--accent);
+}
+
+#error {
+	font-size: 1.2rem;
+	color: red;
+}
