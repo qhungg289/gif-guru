@@ -4,7 +4,7 @@ const searchBox = document.getElementById("search");
 const searchBtn = document.getElementById("search-button");
 const errorDisplay = document.getElementById("error");
 
-function loadGif(paraQuery, query = "cat") {
+function loadGif(paraQuery, query = "aesthetic") {
 	query = paraQuery ? paraQuery : query;
 
 	fetch(
